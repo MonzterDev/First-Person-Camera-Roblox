@@ -124,7 +124,6 @@ function Helper.Setup()
     fUpperTorso.Size = UpperTorso.Size
     fUpperTorso.CFrame = fHumanoidRootPart.CFrame
 
-    print(isR15)
     fRootHip = if isR15 then LowerTorso:FindFirstChild("Root"):Clone() else RootHip:Clone()
     fRootHip.Parent = if isR15 then fLowerTorso else fHumanoidRootPart
     fRootHip.Part0 = fHumanoidRootPart
@@ -280,7 +279,6 @@ function Helper.Reset()
         LeftArm.Anchored = false
     end
 
-    print("Reset")
     Helper.SetArmTransparency(true)
 end
 
